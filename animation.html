@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            width:500px ;
+            background-color: aqua;
+            color: red;
+        }
+        h1:hover{  /* pseudoclass defines styles for a particular state of element*/
+            background-color: blueviolet;
+            color: aquamarine;
+            transition-duration: 4s;
+            padding:100px;
+        }
+        .box{
+            width: 500px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .card1{
+            background-color: rgb(38, 0, 255);
+            width: 250px;
+            height:250px;
+        }
+        .card2{
+            background-color: rgb(16, 121, 64);
+            width: 250px;
+            height: 250px;
+        }
+    .box:hover {
+        animation-name: rotatebox;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes rotatebox {
+        from{
+        transform: rotate(0deg);
+        }
+        to{
+            top: 0px;
+            transform: rotate(360deg);
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <h1>hello world</h1>
+    <div class="box">
+        <div class="card1"></div>
+         <div class="card2"></div>    
+    </div>
+</body>
+</html>

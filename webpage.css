@@ -1,0 +1,121 @@
+/* there should not be any gap bwt webpage and navigation */
+html,body{
+    padding: 0%;
+    margin: 0%;
+}
+
+
+/* nav bar style start*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(59, 180, 211);
+    font-size: 20px;
+    font-weight: 600;/*for thickness*/
+    /* font-family: "Ga Maamli", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    position: fixed;
+    width: 100%;
+    height:8%;   
+    align-items: center;
+}
+.navbar>.nav-brand{
+    font-weight: 700;
+    font-size: 25px;
+}
+.navbar>.navlink{  /*bcz nav bar is parent and navlink is child*/
+    display: flex;
+    width: 50%;
+    justify-content: space-around;    
+}
+/* nav bar style end*/
+.main-section{
+    padding-top: 1.8rem;
+    /* position: relative; */
+    background-image: url("./mountain pic.jpg");
+    height: 60vh;
+    background-position: center;
+    background-size: cover;
+}
+.main-section>#main-sec-heading{
+    font-family: "Roboto",sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    background: -webkit-linear-gradient(rgb(239, 10, 29),rgb(231, 216, 52));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-section>#main-sec-heading> span{
+    background: -webkit-linear-gradient(rgb(112, 232, 20),orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main-section>#main-para{
+    font-family:"Roboto",sans-serif;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    text-align: center;
+    color: rgb(4, 4, 4);
+    font-weight: 200;
+}
+.travel-section{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.travel-section>#travel-item{
+    
+   
+}
+#img-cont >img{
+    height: 12.5rem;
+}
+#travel-title >h4{
+    font-family: "Roboto",sans-serif;
+    font-size:1rem;
+    text-align: center;
+}
+#travel-desc>p{
+    text-align: center;
+    font-size: 1rem;
+}
+/* Media queries for responsive design */
+@media screen and (max-width:600px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar > .navlink{
+        display: block;
+        text-align: right;
+    }
+    
+    .main-section >#main-para{
+        font-size: 1rem;
+    }
+    .travel-section{
+        width: 50%;
+        grid-template-columns: auto
+    }
+}
+/* media queries for responsive design */
+
+@media screen and (min-width:600px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .navbar > .navlink{
+        display: block;
+        text-align: right;
+    }
+    
+    .main-section >#main-para{
+        font-size: 1rem;
+    }
+    .travel-section{
+        width: 100%;
+        grid-template-columns: auto auto auto
+    }
+}

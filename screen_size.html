@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mybox{
+        width: 200px;
+        height: 200px;
+        background-color: aqua;
+        margin-left: auto;
+        margin-right: auto;
+    }
+     @media screen and (min-width:720px)
+      {
+        .mybox
+        {
+            /* provides this style for anything more than 720px
+            if i apply max-width, it applies the style for anything
+            less than 720*/
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+        }
+      }
+        
+</style>
+<body>
+    <div class="mybox"></div>
+</body>
+</html>
